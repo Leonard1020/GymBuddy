@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:myapp="http://schemas.android.com/apk/res-auto">
+
+  <item android:id="@+id/start_current_workout"
+       android:icon="@drawable/play_button"
+       android:title="Start"
+       myapp:showAsAction="always"/>
+  
+  <item android:id="@+id/dumbbell"
+        android:icon="@drawable/dumbbell"
+        android:title="Add"
+        myapp:showAsAction="always"/>
+
+</menu>

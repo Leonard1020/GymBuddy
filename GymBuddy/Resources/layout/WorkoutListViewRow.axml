@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<!--Cannot click workout item <ImageButton
+        android:id="@+id/start_workout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play_button"
+        android:background="@android:color/transparent"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_vertical"
+        android:focusable="false"/>-->
+    <Button
+        android:text="Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/start_workout"
+        android:layout_gravity="center_vertical"
+        android:focusable="false" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Workout Name"
+            android:id="@+id/workout_name" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Completed"
+            android:id="@+id/last_completed" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created By:"
+            android:id="@+id/workout_creator" />
+    </LinearLayout>
+</LinearLayout>
