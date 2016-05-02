@@ -8,7 +8,7 @@ namespace GymBuddy.Entities
         public string Name { get; }
         public string Creator { get; }
         public DateTime? LastCompleted { get; }
-        public List<IExercise> Exercises { get; }
+        public List<IExercise> Exercises { get; set; }
 
         public Workout(string name, string creator, DateTime? completeDate, List<IExercise> exercises)
         {

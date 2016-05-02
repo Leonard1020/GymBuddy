@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Hello World, Click Me!</string>
-    <string name="ApplicationName">GymBuddy</string>
+  <string name="Hello">Hello World, Click Me!</string>
+  <string name="ApplicationName">GymBuddy</string>
+
+  <string name="exercise_prompt">Choose an Exercise</string>
+  <string-array name="exercise_array">
+    <item>Body Weight</item>
+    <item>Weighted</item>
+    <item>Timed</item>
+    <item>Super Set</item>
+  </string-array>
 </resources>

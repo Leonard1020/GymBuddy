@@ -10,11 +10,13 @@ namespace GymBuddy.Adapters
     {
         private readonly List<IExercise> _exercises;
         private readonly Context _context;
+        private readonly Workout _workout;
 
-        public ExerciseListAdapter(Context c, List<IExercise> e)
+        public ExerciseListAdapter(Context c, List<IExercise> e, Workout workout)
         {
             _exercises = e;
             _context = c;
+            _workout = workout;
         }
 
         public override View GetView(int position, View convertView, ViewGroup parent)
@@ -26,6 +28,15 @@ namespace GymBuddy.Adapters
             var exercise = _exercises[position];
 
             name.Text = exercise.Name;
+
+            var deleteExercise = row.FindViewById<ImageButton>(Resource.Id.close_exercise);
+            deleteExercise.Click += (sender, args) =>
+            {
+                _exercises.Remove(exercise);
+                _workout.Exercises = _exercises;
+                FileHelper.UpdateWorkout(_workout);
+                NotifyDataSetChanged();
+            };
 
             return row;
         }

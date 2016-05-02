@@ -71,6 +71,22 @@ namespace GymBuddy
 			}
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f0c0000
+			public const int exercise_array = 2131492864;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -1414,28 +1430,31 @@ namespace GymBuddy
 			public const int ButtonCreateStyle = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int dumbbell = 2130837574;
+			public const int close = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int edit_text_style = 2130837575;
+			public const int dumbbell = 2130837575;
 			
 			// aapt resource value: 0x7f020048
-			public const int ic_action_reply = 2130837576;
+			public const int edit_text_style = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int ic_action_undo = 2130837577;
+			public const int ic_action_reply = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int Icon = 2130837578;
-			
-			// aapt resource value: 0x7f02004d
-			public const int notification_template_icon_bg = 2130837581;
+			public const int ic_action_undo = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int play_button = 2130837579;
+			public const int Icon = 2130837579;
+			
+			// aapt resource value: 0x7f02004e
+			public const int notification_template_icon_bg = 2130837582;
 			
 			// aapt resource value: 0x7f02004c
-			public const int ProgressBarStyle = 2130837580;
+			public const int play_button = 2130837580;
+			
+			// aapt resource value: 0x7f02004d
+			public const int ProgressBarStyle = 2130837581;
 			
 			static Drawable()
 			{
@@ -1450,8 +1469,8 @@ namespace GymBuddy
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0055
-			public const int action0 = 2131427413;
+			// aapt resource value: 0x7f0b0068
+			public const int action0 = 2131427432;
 			
 			// aapt resource value: 0x7f0b0041
 			public const int action_bar = 2131427393;
@@ -1477,8 +1496,8 @@ namespace GymBuddy
 			// aapt resource value: 0x7f0b0042
 			public const int action_context_bar = 2131427394;
 			
-			// aapt resource value: 0x7f0b0059
-			public const int action_divider = 2131427417;
+			// aapt resource value: 0x7f0b006c
+			public const int action_divider = 2131427436;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -1507,17 +1526,41 @@ namespace GymBuddy
 			// aapt resource value: 0x7f0b0018
 			public const int beginning = 2131427352;
 			
+			// aapt resource value: 0x7f0b0061
+			public const int body_weight_activity = 2131427425;
+			
+			// aapt resource value: 0x7f0b0060
+			public const int body_weight_layout = 2131427424;
+			
+			// aapt resource value: 0x7f0b0054
+			public const int body_weight_reps = 2131427412;
+			
+			// aapt resource value: 0x7f0b0062
+			public const int body_weight_reps_left = 2131427426;
+			
+			// aapt resource value: 0x7f0b0053
+			public const int body_weight_sets = 2131427411;
+			
+			// aapt resource value: 0x7f0b0052
+			public const int body_weight_type = 2131427410;
+			
 			// aapt resource value: 0x7f0b002b
 			public const int buttonPanel = 2131427371;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int cancel_action = 2131427414;
+			// aapt resource value: 0x7f0b0069
+			public const int cancel_action = 2131427433;
 			
 			// aapt resource value: 0x7f0b0039
 			public const int checkbox = 2131427385;
 			
-			// aapt resource value: 0x7f0b005c
-			public const int chronometer = 2131427420;
+			// aapt resource value: 0x7f0b006f
+			public const int chronometer = 2131427439;
+			
+			// aapt resource value: 0x7f0b0078
+			public const int closeWorkout = 2131427448;
+			
+			// aapt resource value: 0x7f0b005f
+			public const int close_exercise = 2131427423;
 			
 			// aapt resource value: 0x7f0b001c
 			public const int collapseActionView = 2131427356;
@@ -1525,11 +1568,14 @@ namespace GymBuddy
 			// aapt resource value: 0x7f0b0031
 			public const int contentPanel = 2131427377;
 			
-			// aapt resource value: 0x7f0b0051
-			public const int create_exercise = 2131427409;
+			// aapt resource value: 0x7f0b005b
+			public const int create_exercise = 2131427419;
 			
-			// aapt resource value: 0x7f0b0052
-			public const int create_exercise_progress = 2131427410;
+			// aapt resource value: 0x7f0b005d
+			public const int create_workout = 2131427421;
+			
+			// aapt resource value: 0x7f0b005e
+			public const int create_workout_progress = 2131427422;
 			
 			// aapt resource value: 0x7f0b0037
 			public const int custom = 2131427383;
@@ -1546,8 +1592,8 @@ namespace GymBuddy
 			// aapt resource value: 0x7f0b000c
 			public const int disableHome = 2131427340;
 			
-			// aapt resource value: 0x7f0b0069
-			public const int dumbbell = 2131427433;
+			// aapt resource value: 0x7f0b007c
+			public const int dumbbell = 2131427452;
 			
 			// aapt resource value: 0x7f0b0043
 			public const int edit_query = 2131427395;
@@ -1555,17 +1601,20 @@ namespace GymBuddy
 			// aapt resource value: 0x7f0b0019
 			public const int end = 2131427353;
 			
-			// aapt resource value: 0x7f0b0061
-			public const int end_padder = 2131427425;
+			// aapt resource value: 0x7f0b0074
+			public const int end_padder = 2131427444;
 			
-			// aapt resource value: 0x7f0b0067
-			public const int exercise_list = 2131427431;
+			// aapt resource value: 0x7f0b007a
+			public const int exercise_list = 2131427450;
 			
 			// aapt resource value: 0x7f0b0050
 			public const int exercise_name = 2131427408;
 			
-			// aapt resource value: 0x7f0b0066
-			public const int exercise_toolbar = 2131427430;
+			// aapt resource value: 0x7f0b0051
+			public const int exercise_spinner = 2131427409;
+			
+			// aapt resource value: 0x7f0b0079
+			public const int exercise_toolbar = 2131427449;
 			
 			// aapt resource value: 0x7f0b0025
 			public const int expand_activities_button = 2131427365;
@@ -1588,17 +1637,17 @@ namespace GymBuddy
 			// aapt resource value: 0x7f0b0026
 			public const int image = 2131427366;
 			
-			// aapt resource value: 0x7f0b0060
-			public const int info = 2131427424;
+			// aapt resource value: 0x7f0b0073
+			public const int info = 2131427443;
 			
-			// aapt resource value: 0x7f0b0064
-			public const int last_completed = 2131427428;
+			// aapt resource value: 0x7f0b0076
+			public const int last_completed = 2131427446;
 			
-			// aapt resource value: 0x7f0b005a
-			public const int line1 = 2131427418;
+			// aapt resource value: 0x7f0b006d
+			public const int line1 = 2131427437;
 			
-			// aapt resource value: 0x7f0b005e
-			public const int line3 = 2131427422;
+			// aapt resource value: 0x7f0b0071
+			public const int line3 = 2131427441;
 			
 			// aapt resource value: 0x7f0b0009
 			public const int listMode = 2131427337;
@@ -1606,8 +1655,8 @@ namespace GymBuddy
 			// aapt resource value: 0x7f0b0028
 			public const int list_item = 2131427368;
 			
-			// aapt resource value: 0x7f0b0058
-			public const int media_actions = 2131427416;
+			// aapt resource value: 0x7f0b006b
+			public const int media_actions = 2131427435;
 			
 			// aapt resource value: 0x7f0b001a
 			public const int middle = 2131427354;
@@ -1681,6 +1730,9 @@ namespace GymBuddy
 			// aapt resource value: 0x7f0b004f
 			public const int select_dialog_listview = 2131427407;
 			
+			// aapt resource value: 0x7f0b0065
+			public const int sets_button = 2131427429;
+			
 			// aapt resource value: 0x7f0b003a
 			public const int shortcut = 2131427386;
 			
@@ -1708,14 +1760,17 @@ namespace GymBuddy
 			// aapt resource value: 0x7f0b0017
 			public const int src_over = 2131427351;
 			
-			// aapt resource value: 0x7f0b0068
-			public const int start_current_workout = 2131427432;
+			// aapt resource value: 0x7f0b007b
+			public const int start_current_workout = 2131427451;
 			
-			// aapt resource value: 0x7f0b0062
-			public const int start_workout = 2131427426;
+			// aapt resource value: 0x7f0b0075
+			public const int start_workout = 2131427445;
 			
-			// aapt resource value: 0x7f0b0057
-			public const int status_bar_latest_event_content = 2131427415;
+			// aapt resource value: 0x7f0b0056
+			public const int starting_weight = 2131427414;
+			
+			// aapt resource value: 0x7f0b006a
+			public const int status_bar_latest_event_content = 2131427434;
 			
 			// aapt resource value: 0x7f0b004c
 			public const int submit_area = 2131427404;
@@ -1723,17 +1778,26 @@ namespace GymBuddy
 			// aapt resource value: 0x7f0b000b
 			public const int tabMode = 2131427339;
 			
-			// aapt resource value: 0x7f0b005f
-			public const int text = 2131427423;
+			// aapt resource value: 0x7f0b0072
+			public const int text = 2131427442;
 			
-			// aapt resource value: 0x7f0b005d
-			public const int text2 = 2131427421;
+			// aapt resource value: 0x7f0b0070
+			public const int text2 = 2131427440;
 			
 			// aapt resource value: 0x7f0b0034
 			public const int textSpacerNoButtons = 2131427380;
 			
-			// aapt resource value: 0x7f0b005b
-			public const int time = 2131427419;
+			// aapt resource value: 0x7f0b006e
+			public const int time = 2131427438;
+			
+			// aapt resource value: 0x7f0b0059
+			public const int timed_minutes = 2131427417;
+			
+			// aapt resource value: 0x7f0b005a
+			public const int timed_secs = 2131427418;
+			
+			// aapt resource value: 0x7f0b0058
+			public const int timed_type = 2131427416;
 			
 			// aapt resource value: 0x7f0b002a
 			public const int title = 2131427370;
@@ -1750,20 +1814,32 @@ namespace GymBuddy
 			// aapt resource value: 0x7f0b0012
 			public const int useLogo = 2131427346;
 			
+			// aapt resource value: 0x7f0b0057
+			public const int weight_increase = 2131427415;
+			
+			// aapt resource value: 0x7f0b0063
+			public const int weighted_layout = 2131427427;
+			
+			// aapt resource value: 0x7f0b0064
+			public const int weighted_set_count = 2131427428;
+			
+			// aapt resource value: 0x7f0b0055
+			public const int weighted_type = 2131427413;
+			
 			// aapt resource value: 0x7f0b001f
 			public const int withText = 2131427359;
 			
-			// aapt resource value: 0x7f0b0065
-			public const int workout_creator = 2131427429;
+			// aapt resource value: 0x7f0b0077
+			public const int workout_creator = 2131427447;
 			
-			// aapt resource value: 0x7f0b0054
-			public const int workout_list = 2131427412;
+			// aapt resource value: 0x7f0b0067
+			public const int workout_list = 2131427431;
 			
-			// aapt resource value: 0x7f0b0063
-			public const int workout_name = 2131427427;
+			// aapt resource value: 0x7f0b005c
+			public const int workout_name = 2131427420;
 			
-			// aapt resource value: 0x7f0b0053
-			public const int workout_toolbar = 2131427411;
+			// aapt resource value: 0x7f0b0066
+			public const int workout_toolbar = 2131427430;
 			
 			// aapt resource value: 0x7f0b0020
 			public const int wrap_content = 2131427360;
@@ -1888,52 +1964,55 @@ namespace GymBuddy
 			public const int CreateExerciseDialog = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int ExerciseListViewRow = 2130903066;
+			public const int CreateWorkoutDialog = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int Main = 2130903067;
+			public const int ExerciseListViewRow = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int notification_media_action = 2130903068;
+			public const int Main = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int notification_media_cancel_action = 2130903069;
+			public const int notification_media_action = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int notification_template_big_media = 2130903070;
+			public const int notification_media_cancel_action = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int notification_template_big_media_narrow = 2130903071;
+			public const int notification_template_big_media = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int notification_template_lines = 2130903072;
+			public const int notification_template_big_media_narrow = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int notification_template_media = 2130903073;
+			public const int notification_template_lines = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int notification_template_part_chronometer = 2130903074;
+			public const int notification_template_media = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int notification_template_part_time = 2130903075;
+			public const int notification_template_part_chronometer = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int select_dialog_item_material = 2130903076;
+			public const int notification_template_part_time = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int select_dialog_multichoice_material = 2130903077;
+			public const int select_dialog_item_material = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int select_dialog_singlechoice_material = 2130903078;
+			public const int select_dialog_multichoice_material = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int support_simple_spinner_dropdown_item = 2130903079;
+			public const int select_dialog_singlechoice_material = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int WorkoutListViewRow = 2130903080;
+			public const int support_simple_spinner_dropdown_item = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int WorkoutView = 2130903081;
+			public const int WorkoutListViewRow = 2130903081;
+			
+			// aapt resource value: 0x7f03002a
+			public const int WorkoutView = 2130903082;
 			
 			static Layout()
 			{
@@ -1948,8 +2027,8 @@ namespace GymBuddy
 		public partial class Menu
 		{
 			
-			// aapt resource value: 0x7f0c0000
-			public const int action_menu = 2131492864;
+			// aapt resource value: 0x7f0d0000
+			public const int action_menu = 2131558400;
 			
 			static Menu()
 			{
@@ -2026,6 +2105,9 @@ namespace GymBuddy
 			
 			// aapt resource value: 0x7f050012
 			public const int abc_toolbar_collapse_description = 2131034130;
+			
+			// aapt resource value: 0x7f050016
+			public const int exercise_prompt = 2131034134;
 			
 			// aapt resource value: 0x7f050013
 			public const int status_bar_notification_info_overflow = 2131034131;

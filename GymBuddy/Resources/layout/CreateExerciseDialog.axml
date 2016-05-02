@@ -17,23 +17,118 @@
         android:background="@drawable/edit_text_style"
         android:paddingLeft="10dp"
         android:textColor="#000" />
-<!--<EditText
-      android:layout_below="@id/txtName"
-      android:inputType="number"
-      android:layout_width="match_parent"
-      android:layout_height="35dp"
-      android:id="@+id/txtNumber"
-      android:background="@drawable/edit_text_style"
-      android:layout_marginBottom="10dp"
-      android:layout_marginLeft="20dp"
-      android:layout_marginRight="20dp"
-      android:hint="Number"
-      android:paddingLeft="10dp"
-      android:textColor="#000" />-->
+    <Spinner
+        android:id="@+id/exercise_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/exercise_prompt"
+        android:layout_below="@id/exercise_name" />
+    <LinearLayout
+        android:id="@+id/body_weight_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_below="@id/exercise_spinner">
+        <EditText
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/body_weight_sets"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Sets"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            android:layout_weight="50" />
+        <EditText
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/body_weight_reps"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Reps"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            android:layout_weight="50" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/weighted_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_below="@id/body_weight_type">
+        <EditText
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/starting_weight"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Weight"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            android:layout_weight="50" />
+        <EditText
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/weight_increase"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Increment"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            android:layout_weight="50" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/timed_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_below="@id/weighted_type">
+        <EditText
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/timed_minutes"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Min"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            android:layout_weight="50" />
+        <EditText
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/timed_secs"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Sec"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            android:layout_weight="50" />
+    </LinearLayout>
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/exercise_name"
+        android:layout_below="@id/timed_type"
         android:layout_marginTop="50dp">
         <Button
             android:text="Create Exercise!"
@@ -43,6 +138,7 @@
             android:textSize="20dp"
             android:textColor="#fff"
             android:textStyle="bold"
+            android:layout_marginTop="50dp"
             android:paddingLeft="5dp"
             android:paddingBottom="5dp"
             android:paddingRight="5dp"
@@ -51,14 +147,5 @@
             android:background="@drawable/ButtonCreateStyle"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="30dp" />
-        <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/create_exercise"
-            android:id="@+id/create_exercise_progress"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/ProgressBarStyle"
-            android:visibility="invisible" />
     </RelativeLayout>
 </RelativeLayout>

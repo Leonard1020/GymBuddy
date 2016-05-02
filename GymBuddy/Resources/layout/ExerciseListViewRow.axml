@@ -3,10 +3,83 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Exercise Name"
-        android:id="@+id/exercise_name" />
+        android:descendantFocusability="blocksDescendants">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Exercise Name"
+            android:id="@+id/exercise_name" />
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/close_exercise"
+            android:src="@drawable/close"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/body_weight_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_below="@id/exercise_spinner">
+        <Button
+            android:text="SetsXReps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/body_weight_activity"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            android:layout_weight="50" />
+        <TextView
+            android:text="Total Reps Left:"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/body_weight_reps_left"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            android:layout_weight="50" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/weighted_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:text="Sets X Reps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weighted_set_count"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="10dp"
+            android:textColor="#000" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sets_button"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Weight"
+                android:paddingLeft="10dp"
+                android:textColor="#000" />
+        </RelativeLayout>
+    </LinearLayout>
 </LinearLayout>

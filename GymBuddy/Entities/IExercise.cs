@@ -1,6 +1,6 @@
 namespace GymBuddy.Entities
 {
-    internal interface IExercise
+    public interface IExercise
     {
         string Name { get; }
     }

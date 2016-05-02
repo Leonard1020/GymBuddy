@@ -14,7 +14,7 @@ namespace GymBuddy.Adapters
 
         public WorkoutListAdapter(Context c, List<Workout> w)
         {
-            _workouts = w;
+            _workouts = w ?? new List<Workout>();
             _context = c;
         }
 
@@ -38,6 +38,14 @@ namespace GymBuddy.Adapters
             {
                 creator.Visibility = ViewStates.Invisible;
             }
+
+            var deleteWorkout = row.FindViewById<ImageButton>(Resource.Id.closeWorkout);
+            deleteWorkout.Click += (sender, args) =>
+                                   {
+                                       _workouts.Remove(workout);
+                                       FileHelper.RemoveWorkout(workout);
+                                       NotifyDataSetChanged();
+                                   };
 
             return row;
         }

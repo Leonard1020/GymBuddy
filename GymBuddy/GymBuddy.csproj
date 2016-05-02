@@ -63,12 +63,15 @@
   <ItemGroup>
     <Compile Include="Adapters\ExerciseListAdapter.cs" />
     <Compile Include="CreateExerciseDialog.cs" />
+    <Compile Include="CreateWorkoutDialog.cs" />
     <Compile Include="Entities\BodyWeightExercise.cs" />
     <Compile Include="Entities\TimedExercise.cs" />
     <Compile Include="Entities\WeightedExercise.cs" />
     <Compile Include="Entities\IExercise.cs" />
     <Compile Include="Entities\SuperSet.cs" />
     <Compile Include="Entities\Workout.cs" />
+    <Compile Include="FileHelper.cs" />
+    <Compile Include="ListConverter.cs" />
     <Compile Include="ExercisesActivity.cs" />
     <Compile Include="Adapters\WorkoutListAdapter.cs" />
     <Compile Include="WorkoutsActivity.cs" />
@@ -92,12 +95,17 @@
     <AndroidResource Include="Resources\layout\CreateExerciseDialog.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\CreateWorkoutDialog.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />
@@ -133,6 +141,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ProgressBarStyle.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\close.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
